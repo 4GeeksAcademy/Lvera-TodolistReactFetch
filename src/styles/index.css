@@ -1,11 +1,102 @@
-/* 
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: rgb(103, 103, 103);
+  }
+  
+  .container {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #access {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 350px;
+    border: 0.5px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 1em;
+  }
+  
+  #access:hover {
+    transform: scale(1.4);
+  }
+  
+  span {
+    display: inline-block;
+    color: red;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 1rem;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
 
-    You can write your own styles here...
+  }
+  
+  li {
+    padding-inline: 10px;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button {
+    background: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    outline: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-*/
+  li:hover {
+    background-color: #cecece;
+  }
+  
+  li:hover button {
+    opacity: 1;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    color: darkred;
+  }
+  
+  p {
+    font-size: 0.8em;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  
